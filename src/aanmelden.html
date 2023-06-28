@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   
+    <title>Aanmelden</title>
+</head>
+<body>
+    
+    <header class=" w-auto p-5 bg-white shadow md:flex md:items-center md: justify-between">
+        <div class="flex justify-between items-center">
+            <a href="index.html"> <img src="../img/logo-laddertje-gsm.png" alt=" foto logo" class="h-24 inline w-auto cursor-pointer"></a>
+            <span class=" text-lichtBlauw text-5xl  cursor-pointer mx-2 md:hidden">
+                <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+        <nav class="">
+           
+
+            <ul class="md:flex md:items-center z-1 md:z-auto md:static absolute bg-white w-full left-0 md: w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[bg-blue-400 transition-all ease-in duration-500]">
+                <li class="mx-4 my-3 md:my-0">
+                  <a href="overOns.html" class="text-xl hover:text-blue-300 duration-500"> Over ons</a> 
+                </li>
+                <li class="mx-4 my-3  md:my-0">
+                   <a href="diensten.html" class="text-xl hover:text-blue-300 duration-500">Diensten</a> 
+                </li>
+                <li class="mx-4 my-3 md:my-0">
+                    <a href="werkenVoorOns.html" class="text-xl hover:text-blue-300 duration-500">Werken bij ons</a> 
+                 </li>
+                 <li class="mx-4 my-3 md:my-0">
+                    <a href="contact.html" class="text-xl hover:text-blue-300 duration-500">Contact</a> 
+                 </li>
+                 <button class=" my-4 ">
+                    <a href="aanmelden.html" class="bg-blue-300 text-white duration-500 px-6 py-2 text-xl mx-4 shadow-xl hover:shadow-none rounded">Aanmelden</a> 
+                 </button>
+               
+            </ul>
+        </nav>   
+    </header>
+
+
+
+ 
+
+<div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-lg">
+      <h1 class="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">
+       Meld je hier Aan
+      </h1>
+  
+      <p class="mx-auto mt-4 max-w-md text-center text-gray-500">
+       Welkom! meld je hier aan voor je kalender te zien.
+      </p>
+  
+      <form
+        action=""
+        class="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8"
+      >
+        <p class="text-center text-lg font-medium">Meld je aan op jou account</p>
+  
+        <div>
+          <label for="email" class="sr-only">Email</label>
+  
+          <div class="relative">
+            <input
+              type="email"
+              class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+              placeholder="Enter email"
+            />
+  
+            <span class="absolute inset-y-0 end-0 grid place-content-center px-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 text-gray-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+  
+        <div>
+          <label for="password" class="sr-only">Password</label>
+  
+          <div class="relative">
+            <input
+              type="password"
+              class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+              placeholder="Enter password"
+            />
+  
+            <span class="absolute inset-y-0 end-0 grid place-content-center px-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 text-gray-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+  
+        <button
+          type="submit"
+          class="block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white"
+        >
+          Sign in
+        </button>
+  
+        <p class="text-center text-sm text-gray-500">
+          Geen account?
+          <a class="underline" href="">Sign up</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+
+  <footer class="bg-gray-100">
+    <div
+      class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
+    >
+      <div class="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
+        <a
+          class="inline-block rounded-full bg-blue-300  text-white p-2  shadow transition hover:bg-teal-500 sm:p-3 lg:p-4"
+          href="diensten.html"
+        >
+          <span class="sr-only">Back to top</span>
+  
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+      </div>
+  
+      <div class="lg:flex lg:items-end lg:justify-between">
+        <div>
+          <div class="flex justify-center text-teal-600 lg:justify-start">
+            <img class="w-2/6 h-fit" src="../img/logo-laddertje-gsm.png" alt="">
+          </div>
+  
+          <p
+            class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left"
+          >
+          Professionele schoonmaak & Ruitenwasserij!
+          </p>
+        </div>
+  
+        <ul
+          class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
+        >
+          <li>
+            <a class="text-gray-700 transition hover:text-blue-400" href="overOns.html">
+             Over ons
+            </a>
+          </li>
+  
+          <li>
+            <a class="text-gray-700 transition hover:text-blue-400" href="diensten.html">
+              Diensten
+            </a>
+          </li>
+  
+          <li>
+            <a class="text-gray-700 transition hover:text-blue-400" href="werkenVoorOns.html">
+             Werken bij ons.
+            </a>
+          </li>
+  
+          <li>
+            <a class="text-gray-700 transition hover:text-blue-400" href="aanmelden.html">
+            Aanmeleden
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <p class="mt-12 text-center text-sm text-gray-500 lg:text-right">
+        Copyright &copy; 2023. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
